@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<beans>
+	<bean id="A" class="test.org.cyh.model.ModelA"/>
+	<bean id="C" class="test.org.cyh.model.ModelC"/>
+	
+	<bean id="B" class="test.org.cyh.model.ModelB">
+		<property name="modelA" ref="A"/>
+		<property name="modelC" ref="C"/>
+	</bean>
+	
+</beans>
